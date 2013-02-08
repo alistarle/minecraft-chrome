@@ -1,0 +1,74 @@
+<html>
+	
+    <head>
+    	<title>Minecraft Launcher</title>
+    	<link rel="stylesheet" href="style.css"/>
+    	<script src="jquery.js" type="text/javascript"></script>
+    	<script src="functions.js" type="text/javascript"></script>
+    </head>
+    
+<body>
+    
+    <div id="header"><h1 style="display:inline;">Minecraft Chrome Launcher</h1><div id="author">by <span style="color:#96aa48">#</span>96AA48</div></div>
+    
+    	<div id="menubg">
+        	<div id="fullscreenbutton" class="gofullscreen">Go fullscreen.</div>
+			<div id="menu">     
+                       
+                <ul id="box1">
+                	<ul>
+                    	<li id="play"><a>Play Minecraft</a></li>
+                    </ul>
+                    <ul id="login">
+	                    <form>
+	                    	<h3>Login :</h3>
+	                    	<input type="text" name="username" value="Username"/>
+	                    	<input type="password" name="password" value="Password"/>
+	                    	<div style=""><small>Save Username?</small><input type="checkbox" name="saveusername" /><br><small>Save Password ?</small><input type="checkbox" name="savepassword"  /><br><input type="button" name="login" value="Login" /></div>
+	                    	
+	                    </form>
+                    </ul>
+                </ul>
+                <ul style="display:none;">
+                        <h2>Minecraft related :</h2>
+                    <li class="first"><a href="http://www.minecraftforum.net/" target="_blank">Minecraft forums</a></li>
+                    <li><a href="http://minecraft.net">Minecraft.net</a></li>
+                    <li class="last"><a href="http://www.planetminecraft.com/" target="_blank">PlanetMinecraft.com</a></li>
+                </ul> 
+                   
+                   <div id="box2">
+                   	<ul>
+	                    	<h2>Developer's Credits.</h2>
+	                    <li class="first"><a href="http://hexedlime.tk/">My website</a></li>
+	                    <li class="last"><a href="http://hexedlime.tk/contact.php">Contact me!</a></li>
+	                </ul>
+	                <ul>
+	                	<h2 style="visibility:hidden;">..</h2>
+	                    <li class="first"><a href="http://wolfangraul.deviantart.com/gallery/?q=Minecraft#/d3a7xsf" target="_blank">Icons</a><a target="_blank" href="http://wolfangraul.deviantart.com/"> by Wolfangraul</a></li>
+	                    <li class="last"><a href="http://hexedlime.tk" target="_blank">Code by <span style="color:#96aa48">#</span>96AA48</a>.</li>
+	                </ul>
+	                <ul>
+	                	<h2>Options</h2>
+	                	<li class="first" id="removeLogin">Remove login info.</li>
+	                	<li class="last" id="downloadMinecraft">Download Minecraft locally.</li>
+	                </ul>
+	                <ul>
+	                	<div id="download">
+	                		
+	                		<div id="downloadstatus">Downloading ...</div>
+	                		<div id="loadanim"><img src="images/loader.gif"></div> 
+	                		
+	                	</div>
+	                	
+	                </ul>
+					</div>  
+				
+            </div>
+           
+        </div>
+        
+        <iframe id="iframe" src="http://mcupdate.tumblr.com/" scrolling="auto" frameborder="0"></iframe>
+
+</body>
+    
+</html>

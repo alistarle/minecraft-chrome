@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Minecraft for Chrome",
+  "version": "0.0.6",
+  "description" : "A Minecraft Launcher thru Chrome that let's you play thru Minecraft.net!",
+  "icons": {
+	"16": "icon_16.png",
+    "128": "icon_128.png"
+  },
+   "app": {
+	"launch": {
+         "container": "tab",
+         "local_path": "app.html"
+      }
+  },
+  "permissions": [
+  	"storage",
+  	"filesystem"
+  ]
+}
