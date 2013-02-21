@@ -2,6 +2,7 @@
 
 body {
 	background-color:#555;
+	background-image:url('images/stone.png');
 	padding:0;
 	margin:0;
 	font-family:"Minecraft";
@@ -17,8 +18,6 @@ iframe,applet {
 	height:100%;
 	position:fixed;
 	left:55%;
-	background-color:#593D29;
-	background-image:url('images/stone.png');
 	border-left:solid 2px #593D29;
 	padding-top:100px;
 	overflow-y:auto;
@@ -125,12 +124,6 @@ p {
 	
 }
 
-
-#download {
-	
-	/*display:none;*/
-	
-}
 
 #loadanim img {
 	
