@@ -15,6 +15,7 @@
   },
   "permissions": [
   	"storage",
-  	"filesystem"
+  	"http://login.minecraft.net/*",
+  	"https://s3.amazonaws.com/MinecraftDownload/*"
   ]
 }
