@@ -150,7 +150,7 @@ function authLogin(u,p) {
 }
 
 function buildMinecraft(e) {
-	var link = "http://dev.hexedlime.tk/mc/?u=" + e[2] + "&v=" + e[0] + "&s=" + e[3] + "&d=" + e[4];
+	var link = "http://dev.hexlime.tk/mc/?u=" + e[2] + "&v=" + e[0] + "&s=" + e[3] + "&d=" + e[4];
 	console.log(link);
 	$("#iframe").attr("src",link);
 }
