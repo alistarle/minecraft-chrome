@@ -10,11 +10,6 @@ function make_object() {
 		"login" : {
 			"get" : function () {
 					//Function for getting login information
-					if (chromecraft.tools.online() == false){	
-						offline();
-						return;
-					}
-					
 					chrome.storage.sync.get('username',function(result){
 						var username = result.username;
 							if (username) {
@@ -49,6 +44,7 @@ function make_object() {
 					if (savepassword == "on") {
 						chrome.storage.sync.set({'password':password});	
 					}
+					chromecraft.login.auth(username,password);
 			},
 			"unset" : function () {
 					//Function for deleting the information saved by the chrome browser.		
@@ -71,7 +67,7 @@ function make_object() {
 							alert("Bad login: please check your Minecraft login information again.");
 						}
 						else {
-							buildMinecraft(auth);
+							chromecraft.frame.build(auth);
 						}
 					});
 					console.log(link);
@@ -93,26 +89,26 @@ function make_object() {
 						$("#fullscreenbutton").fadeOut(1000,function(e){
 							$("#fullscreenbutton").removeClass('removefullscreen');
 							$("#fullscreenbutton").remove();
-							$("#menubg").prepend('<div id="fullscreenbutton" class="gofullscreen">Go fullscreen.</div>');
-								$("#header").slideDown(1500);
+							$("#menu").prepend('<div id="fullscreenbutton" class="gofullscreen">Go fullscreen.</div>');
+								$("header").slideDown(1500);
 								$("#iframe").animate({"width":"55%",height:"90%",marginTop:"102px"},1500,function(e){
-									$("#menubg").slideDown(1500);
+									$("#menu").slideDown(1500);
 								});
 							$("#fullscreenbutton").click(function(e){
-								fullscreen();
+								chromecraft.tools.fullscreen();
 							});
 						});
 					}
 					else {
-						$("#menubg").slideUp(1500,function(e){
+						$("#menu").slideUp(1500,function(e){
 								$("#fullscreenbutton").removeClass('gofullscreen');
 								$("#fullscreenbutton").remove();
 								$("body").before("<div id='fullscreenbutton' class='removefullscreen'>X</div>");
-									$("#header").slideUp(1500);
+									$("header").slideUp(1500);
 									$("#iframe").animate({width:"100%",height:"100%",marginTop:"0px"},1500,function(e){
 										$(".removefullscreen").fadeIn("fast");
 											$(".removefullscreen").click(function(e){
-												fullscreen();
+												chromecraft.tools.fullscreen();
 											});
 									});
 						});
@@ -141,18 +137,18 @@ function make_object() {
 								alert("Storing your password won't be completely safe, continue on own risks.");
 							}
 					});
-				});
-				
-				$("[name='login']").click(function(e){
-						getLogin();
+					$(this).unbind();
+					$(this).click(function () {
+						chromecraft.login.set();
+					});
 				});
 				
 				$("#removeLogin").click(function(e){
-					removeLogin();
+					chromecraft.login.unset();
 				});
 				
 				$("#fullscreenbutton").click(function(e){
-					fullscreen();
+					chromecraft.tools.fullscreen();
 				});
 				
 		}
