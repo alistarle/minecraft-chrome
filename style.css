@@ -159,7 +159,6 @@ p {
 }
 
 .removefullscreen {
-
 	position: fixed;
 	color: white;
 	background-color: #000;
@@ -181,6 +180,11 @@ p {
 	padding-left: 10px;
 	padding-bottom: 10px;
 	display:none;
-	
+}
 
+div#cc {
+	position:fixed;
+	z-index:10;
+	right:10px;
+	bottom:10px;
 }
