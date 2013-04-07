@@ -100,48 +100,31 @@ p {
 }
 
 #menu ul:first-child {
-	
 	text-align: center;
-	
 }
 
 #box2 ul {
-	
 	list-style:none;
 	float:left;
-	
 }
 
 #box2 ul:first-child li {
-		
-		width:220px;
+	width:220px;
 }
 
 
 #login {
-	
 	display:none;
-	
 }
 
 
-#loadanim img {
-	
-	height:25%;
-	
-}
-
-#fullscreenbutton {
-	
-	
-	
+#loadanim img {	
+	height:25%;	
 }
 
 .gofullscreen {
-	
 	margin-top:10px;
 	color:#FFF;
-
 }
 
 .gofullscreen:hover {
