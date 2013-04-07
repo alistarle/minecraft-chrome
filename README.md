@@ -29,3 +29,17 @@ Notice :
 ========
 
 Will be adding something here shortly
+
+
+Release info :
+==============
+
+Version 1.0 :
+-------------
+	
+	First release of the app!
+	Basic features include :
+		1. Logging into the Minecraft auth server.
+		2. Using the information to build an applet.
+		3. Playing Minecraft from the browser.
+		4. Go fullscreen for the full Minecraft experience.
