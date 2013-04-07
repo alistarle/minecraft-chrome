@@ -21,7 +21,7 @@ OPTION 2 (Installing the release (.crx)):
 2. Open up your Chrome browser.
 3. Navigate to chrome://extensions.
 4. Open up Windows Explorer/Mac Finder/Linux Explorer and navigate to the Downloads folder or other folder you downloaded to.
-5. Click and drag the minecraftchrome-v*.crx file to the chrome://extensions windows and drop it.
+5. Click and drag the minecraft-chrome-v*.crx file to the chrome://extensions windows and drop it.
 6. The extension should install!
 6. Go to your "newtab" when starting up and click the "Minecraft for Chrome" icon.
 
