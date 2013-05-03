@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Minecraft for Chrome",
-  "version": "0.0.6",
+  "version": "1.0",
   "description" : "A Minecraft Launcher thru Chrome that let's you play thru Minecraft.net!",
   "icons": {
 	"16": "icon_16.png",
@@ -14,8 +14,6 @@
       }
   },
   "permissions": [
-  	"storage",
-  	"http://login.minecraft.net/*",
-  	"https://s3.amazonaws.com/MinecraftDownload/*"
+  	"storage"
   ]
 }
