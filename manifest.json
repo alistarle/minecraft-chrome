@@ -14,6 +14,8 @@
       }
   },
   "permissions": [
-  	"storage"
+  	"storage",
+  	"http://dev.hexlime.tk/*",
+  	"http://login.minecraft.net/*"
   ]
 }
