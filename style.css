@@ -66,7 +66,14 @@ div#menu {
 div#menu div#content {
 	text-align:center;
 	color:#FFF;
-	text-shadow:0px -2px 0px #000;
+}
+
+div#menu div#content h2 {
+    text-shadow:0px -2px 0px #333;
+}
+
+div#menu div#content {
+    text-shadow:0px -1px 0px #333;
 }
 
 div#menu div#content ul li {
